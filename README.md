@@ -20,8 +20,8 @@ python3 extract_triggers.py /path/to/rosbag /path/to/trigger_file <optional argu
 
 ### Extract markers
 
-1. Adjust the fields `bag_file`, `bag_topic` and `frame_time_file` in `eb_marker_extraction.launch.py`
-2. Run colcon `colcon build --symlink-install --cmake-args -DCMAKE_BUILD_TYPE=RelWithDebInfo`
-3. Run the extraction `os2 launch frequency_cam eb_marker_extraction.launch.py`
+1. Adjust the fields `bag_file`, `bag_topic` and `frame_time_file` to the path in your setup in `eb_marker_extraction.launch.py`
+2. Run colcon `colcon build --symlink-install --cmake-args -DCMAKE_BUILD_TYPE=RelWithDebInfo` in the ROS2 workspace
+3. Run the extraction `ros2 launch frequency_cam eb_marker_extraction.launch.py`
 
 The extracted markers are then saved in `blob_detection_position_points.csv`.
