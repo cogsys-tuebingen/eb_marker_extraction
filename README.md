@@ -2,7 +2,7 @@
 
 ## Overview
 
-This tool is built ontop of [FrequencyCam](https://github.com/berndpfrommer/frequency_cam). It relies on FrequencyCam's ability to detect frequencies. Additionally, it filters out frequencies outside of the frequency of eWand's markers.
+This tool is built ontop of [FrequencyCam](https://github.com/berndpfrommer/frequency_cam). It relies on FrequencyCam's ability to detect frequencies. Additionally, it filters out frequencies outside of the frequency of eWand's markers, does blob detection and orders the markers.
 
 ## Installation
 
